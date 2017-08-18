@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800'); /*--- Paragraph Font --*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:700'); /*--- Heading Font --*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width: 100%;
+	background-color:white; 
+}
+h2 {
+	font-family: 'Roboto', serif;
+	font-size: 200%;
+	font-weight: 700;
+	color: #2C2C2C;
+	text-align: center;
+	text-decoration: underline;
+}
+p {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #2C2C2C;
+	font-size: 1.3em;
+	line-height: 140%;
+	text-align: justify;
+	font-weight: 100;
+}
+img {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+    background: url(images/front-photo1.jpg) no-repeat 50% 50%;  /*Photo by Taner Ardalı on Unsplash*/
+    background-size: cover;
+	display: table;
+	top: 0;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+.content {
+	max-width: 600px;
+	margin: auto;
+}
+
+h1 {
+  font: 700 5em/1 "Ubuntu", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+ @-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.content p {
+	color: #FFF;
+    text-align: center;
+}
+.inner {
+	max-width: 600px;
+	margin: auto;
+	font-size: 170%;
+	line-height: 1.6;
+	padding: 10px;
+}
+/*--- Start Nav --*/
+nav {
+	float: left;
+	padding: 5% 5% 0 0;
+	height: 50px;
+}
+nav ul {
+	list-style: none;
+	float: left;
+}
+nav ul li {
+	font-family: 'Raleway', sans-serif;
+	font-size: 120%;
+}
+nav ul li a {
+	color: #FFF;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	text-decoration: underline;
+}
+nav ul, nav:active ul {
+	display: none;
+	padding: 8px 0;
+	left: 45px;
+	top: 60px;
+	width: 20%;
+	z-index: 1000;
+}
+nav li {
+	width: 100%;
+	padding: 8px 0 10px 7px;
+	margin: 12px;
+}
+nav:hover ul {
+	display: block;
+	position: absolute;
+}
+#menu-icon {
+	width: 30px;
+	height: 26px;
+	background: url(images/nav-icon.png) center;
+	display: inline-block;
+	margin: 50px 0 0 50px;
+}
+/*---End Nav --*/
+
+.left-col {
+	width: 60%;
+	float: left;
+	margin: 4% 0 4% 4%;
+}
+.sidebar {
+	width: 26%;
+	float: left;
+	margin: 4%;
+}
+
+/* Portfolio */
+#container {
+  margin: 2em auto;
+  max-width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container figure {
+  margin: 0;
+  max-width: 100%;
+  padding-bottom: 10%;
+}
+
+#container figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ a {
+	text-decoration: none;
+}
+#description_content {
+	text-align: center;
+}
+
+/*Contact */
+.contact p {
+	text-align: center;
+	letter-spacing: 5px;
+}
+.contact a {
+	color: #2C2C2C;
+	text-decoration: none;
+}
+.break {
+	display: none;
+}
+.clearfix {
+	clear: both;
+	width: 20%;
+	height: 20%;
+}
+.parallax {
+	 background:url(images/oli-dale-139169.jpg) repeat fixed 100%; 
+	 opacity: .5;
+}
+.parallax-inner {
+	padding-top: 17%;
+}
+
+/* Social icons  */
+.social {
+	list-style-type: none;
+	text-align: center;
+	
+}
+.social li {
+	display: inline-block;
+
+}
+.social i {
+	font-size: 2em;
+	padding: 20px;
+	color: #2C2C2C;
+}
+.social i:hover {
+	color: #606060;
+}
+/*Contact  */
+
+#comments {
+ text-align: center;	
+}
+/* Footer  */
+footer.second {
+	background-color: #2C2C2C;
+}
+footer.second p {
+	color: #FFF;
+	text-align: center;
+	padding: 5%;
+}
+
+/* Media Queries  */
+@media screen and (max-width: 768px) {
+	#menu-icon {
+		margin: 26px 0 0 26px;
+	}
+	nav ul, nav:active ul {
+		padding: 8px 0;
+		left: 23px;
+		top: 34px;
+		width: 50%;
+	}
+	.inner {
+		font-size: 120%;
+	}
+	.content h1 {
+		font-size: 180%;
+	}
+	p {
+		font-size: 80%;
+	}
+	h2 {
+		font-size: 160%;
+	}
+	.left-col {
+		width: 96%;
+		margin: 0 0 3% 0;
+		padding: 0 2%;
+	}
+	.sidebar {
+		width: 96%;
+		margin: 0 auto;
+	}
+    .break {
+		display: block;
+	}
+	.social i {
+		font-size: 170%;
+	}
+    
+}
+
